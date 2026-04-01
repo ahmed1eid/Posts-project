@@ -63,7 +63,7 @@ posts/
 * Fetches posts from API:
 
   ```
-  https://jsonplaceholder.typicode.com/posts
+  https://dummyjson.com/posts
   ```
 * Uses **ISR**:
 
