@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { EyeIcon, UserIcon } from "lucide-react"; // إذا كنت تستخدم مكتبة أيقونات، أو يمكنك استخدام نص عادي
+import { EyeIcon, UserIcon } from "lucide-react";
 
 export default function Post({ PostData }) {
   return (
@@ -7,16 +7,16 @@ export default function Post({ PostData }) {
       
       {/* الجزء العلوي: معلومات الكاتب */}
       <div className="flex items-center gap-2 mb-4">
-        <div className="p-2 bg-fuchsia-500/20 rounded-full">
-          <UserIcon className="w-4 h-4 text-fuchsia-400" />
+        <div className="p-2 bg-blue-500/20 rounded-full">
+          <UserIcon className="w-4 h-4 text-blue-400" />
         </div>
-        <span className="text-xs font-medium text-fuchsia-300 uppercase tracking-wider">
+        <span className="text-xs font-medium text-blue-300 uppercase tracking-wider">
           User ID: {PostData.userId}
         </span>
       </div>
 
       {/* العنوان */}
-      <h2 className="text-xl font-bold text-white mb-3 line-clamp-2 group-hover:text-fuchsia-400 transition-colors capitalize">
+      <h2 className="text-xl font-bold text-white mb-3 line-clamp-2 group-hover:text-blue-400 transition-colors capitalize">
         {PostData.title}
       </h2>
 
@@ -31,10 +31,10 @@ export default function Post({ PostData }) {
           <EyeIcon className="w-4 h-4" />
           <span className="text-xs font-semibold">{PostData.views || 0} views</span>
         </div>
-
+        
         <Link 
-          href={`/posts/${PostData.id}`} 
-          className="text-xs font-bold text-white bg-fuchsia-600 hover:bg-fuchsia-500 px-4 py-2 rounded-lg transition-colors shadow-lg shadow-fuchsia-900/20"
+          href={`/Posts/${PostData.id}`} 
+          className="text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-lg transition-colors shadow-lg shadow-fuchsia-900/20"
         >
           Read More
         </Link>
