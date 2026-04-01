@@ -4,13 +4,14 @@ export default async function Home() {
   let data = [];
 
   try {
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+    const response = await fetch('https://dummyjson.com/posts', {
       next: { revalidate: 60 },
       signal: AbortSignal.timeout(5000) // توقف بعد 5 ثوانٍ لو الإنترنت معلق
     });
     
     if (response.ok) {
-      data = await response.json();
+      let result = await response.json();
+      data = result.posts || [];
     }
   } catch (error) {
     console.log("Network failed, using static fallback info");
@@ -37,7 +38,7 @@ export default async function Home() {
           </h1>
           
           <p className="max-w-md text-lg leading-8 text-indigo-200/70">
-            Welcome, Ahmed! This is your applied project. Check the latest stories fetched from the server.
+            Welcome, This is my applied project. Check the latest stories fetched from the server.
           </p>
         </div>
 

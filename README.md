@@ -11,6 +11,12 @@ This project showcases best practices like:
 
 ---
 
+## 🌐 Live Demo
+
+👉 https://posts-project-frontend.netlify.app/
+
+---
+
 ## 📸 Overview
 
 This app allows users to:
@@ -19,12 +25,6 @@ This app allows users to:
 * Browse posts
 * View detailed post pages
 * Handle network failures gracefully
-
----
-
-🌐 Live Demo
-
-👉 https://posts-project-frontend.netlify.app/
 
 ---
 
