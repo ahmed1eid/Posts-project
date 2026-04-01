@@ -1,6 +1,4 @@
-// 1. تأكد من حالة الأحرف (Case Sensitivity)
-// لو المجلد اسمه [post] والملف اسمه Post.jsx، استدعيه كدة:
-import PostCard from "./[post]/Post"; 
+import PostCard from "./[post]/Post";
 
 export default async function Posts() {
     let posts = [];
