@@ -22,6 +22,12 @@ This app allows users to:
 
 ---
 
+🌐 Live Demo
+
+👉 https://posts-project-frontend.netlify.app/
+
+---
+
 ## 🧠 Key Concepts Used
 
 * **Next.js App Router**
